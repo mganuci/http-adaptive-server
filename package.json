@@ -1,0 +1,22 @@
+{
+  "name": "http-adaptive-server",
+  "version": "1.0.0",
+  "description": "Adaptive HTTP server to simulate external systems responding to REST calls",
+  "main": "src/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "2.4.5"
+  },
+  "scripts": {
+    "start": "node src/adaptive.js ../config-folders/jenkins",
+    "test": "mocha src/tests/*.js"
+  },
+  "author": "Marian Ganuci <marian_ganuci@yahoo.com>",
+  "homepage": "https://github.com/mganuci/http-adaptive-server",
+  "bugs": {
+    "url": "https://github.com/mganuci/http-adaptive-server/issues",
+    "email": "evariste_galois_77@yahoo.com"
+  },
+  "license": "Apache-2.0"
+}
