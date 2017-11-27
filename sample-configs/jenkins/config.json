@@ -1,0 +1,35 @@
+{
+  "https" : {
+    "pfx" : "../ssl-samples/cert.pfx",
+    "passphrase" : "toto"
+  },
+
+  "routes" : [
+    {
+      "matching" : "/login\\?user=johny-drama",
+      "reply_with" : "login-success.json"
+    },
+
+    {
+      "matching" : "/login/FORCE",
+      "reply_with" : "no-force.json"
+    },
+
+    {
+      "matching" : "/login/*",
+      "reply_with" : "login-failed.json"
+    },
+
+    {
+      "matching" : "/appending/*",
+      "reply_with" : "appended.xml"
+    },
+
+    {
+      "matching" : "/list-users$/*",
+      "reply_with" : "not_allowed.json",
+      "code" : 403,
+      "method" : "get"
+    }
+  ]
+}

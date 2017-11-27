@@ -1,0 +1,9 @@
+{
+  "routes" : [
+    {
+      "matching" : "/*",
+      "reply_with" : "ok.json",
+      "status_code" : 200
+    }
+  ]
+}
